@@ -22,10 +22,9 @@ jobs:
           ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${IP_ADDRESS} '
 
               # Now we have got the access of EC2 and we will start the deploy .
-              cd /home/ubuntu/sca-devops-project &&
-              git init
+              cd /home/ubuntu/ &&
+              git clone https://github.com/maryjonah/SCA_Devops_Python_Project.git
               git checkout master &&
-              git fetch --all &&
               git reset --hard origin/master &&
               git pull origin master &&
               python3 -m venv venv
