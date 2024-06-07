@@ -23,8 +23,9 @@ jobs:
 
               # Now we have got the access of EC2 and we will start the deploy .
               cd /home/ubuntu/ &&
+              rm -rf SCA_Devops_Python_Project
               git clone https://github.com/maryjonah/SCA_Devops_Python_Project.git
-              cd SCA_Devops_python_Project
+              cd SCA_Devops_Python_Project
               git checkout master &&
               git reset --hard origin/master &&
               git pull origin master &&
