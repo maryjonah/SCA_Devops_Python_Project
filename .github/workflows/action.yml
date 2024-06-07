@@ -23,6 +23,7 @@ jobs:
 
               # Now we have got the access of EC2 and we will start the deploy .
               cd /home/ubuntu/sca-devops-project &&
+              git init
               git checkout master &&
               git fetch --all &&
               git reset --hard origin/master &&
