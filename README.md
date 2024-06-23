@@ -1,2 +1,2 @@
-# SCA_Devops_Python_Project
+## Deploy Flask App to AWS EC2 Instance using GitHub Actions
 Python Project to implement topics during SCA Devops Mentorship Program
